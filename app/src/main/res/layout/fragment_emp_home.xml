@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_page"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.EmployeeDashboard.EmpHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_14sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_centerHorizontal="true"
+                    app:cardElevation="@dimen/_1sdp">
+
+                    <RelativeLayout
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_img"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/user_image_icn"/>
+
+                        <LinearLayout
+
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/user_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/greet_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Hello "
+                                android:textSize="@dimen/_12sdp" />
+
+                            <TextView
+                                android:id="@+id/userName_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="Prashant Deshmukh"
+                                android:textSize="@dimen/_15sdp" />
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_14sdp">
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Scheduled by  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/purple_500"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Amole Tate"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="#AAAAAA" />
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Subject  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Discusse New Project "/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Date  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="27 Aug 2023"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Location  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="3rd Floor, Room No. 05"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:text="Accept"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:backgroundTint="#FB0909"
+                                android:text="Deny"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_14sdp">
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Scheduled by  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/purple_500"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Amole Tate"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="#AAAAAA" />
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Subject  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Discusse New Project "/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Date  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="27 Aug 2023"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Location  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="3rd Floor, Room No. 05"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:text="Accept"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:backgroundTint="#FB0909"
+                                android:text="Deny"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_14sdp">
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Scheduled by  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/purple_500"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Amole Tate"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="#AAAAAA" />
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Subject  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Discusse New Project "/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Date  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="27 Aug 2023"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Location  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="3rd Floor, Room No. 05"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:text="Accept"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:backgroundTint="#FB0909"
+                                android:text="Deny"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_14sdp">
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Scheduled by  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/purple_500"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Amole Tate"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="#AAAAAA" />
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Subject  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Discusse New Project "/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Date  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="27 Aug 2023"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Location  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="3rd Floor, Room No. 05"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:text="Accept"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:backgroundTint="#FB0909"
+                                android:text="Deny"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_14sdp">
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Scheduled by  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/purple_500"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Amole Tate"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="#AAAAAA" />
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Subject  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Discusse New Project "/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Date  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="27 Aug 2023"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Location  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="3rd Floor, Room No. 05"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:text="Accept"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:backgroundTint="#FB0909"
+                                android:text="Deny"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_14sdp">
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Scheduled by  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/purple_500"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="Amole Tate"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="#AAAAAA" />
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Subject  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Discusse New Project "/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Date  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="27 Aug 2023"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_50sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Location  "/>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_width="wrap_content"
+                                android:textColor="#FF5722"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="3rd Floor, Room No. 05"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:text="Accept"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:textSize="@dimen/_7sdp"
+                                android:backgroundTint="#FB0909"
+                                android:text="Deny"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

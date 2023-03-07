@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/org_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home">
+    </item>
+    <item
+        android:id="@+id/org_meeting"
+        android:icon="@drawable/baseline_group_work_24"
+        android:title="Meeting">
+    </item>
+
+    <item
+        android:id="@+id/org_member"
+        android:icon="@drawable/baseline_people_alt_24"
+        android:title="Members">
+    </item>
+    <item
+        android:id="@+id/org_account"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Account">
+    </item>
+
+</menu>
