@@ -1,4 +1,4 @@
-package com.example.meethall.ui;
+package com.example.meethall.ui.Dashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 

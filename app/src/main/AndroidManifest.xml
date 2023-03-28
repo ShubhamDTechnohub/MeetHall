@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,9 +12,32 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.MeetHall"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ui.AddEmployee"
+            android:name=".MainActivitySived"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Dashboard.room_list"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Dashboard.RoomManagement"
+            android:exported="false"
+            android:label="@string/title_activity_hall_management" />
+        <activity
+            android:name=".ui.Conference_Hall"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Dashboard.emp_list"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Dashboard.org_list"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Dashboard.Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Dashboard.AddEmployee"
             android:exported="false" />
         <activity
             android:name=".ui.OrganizerDashboard.org_dashboard"

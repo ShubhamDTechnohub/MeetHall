@@ -9,26 +9,25 @@
     tools:context=".ui.LoginActivity">
 
     <ScrollView
-        android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
 
         <LinearLayout
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="vertical">
 
 
-
             <TextView
-                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="LOGIN MEET ID"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/montserrat_semibold"
-                android:textSize="@dimen/_18sdp"
-                android:textColor="#2B2B2B"/>
+                android:text="LOGIN MEET ID"
+                android:textColor="#2B2B2B"
+                android:textSize="@dimen/_18sdp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
@@ -68,9 +67,9 @@
                 app:boxCornerRadiusTopEnd="@dimen/_11sdp"
                 app:boxCornerRadiusTopStart="@dimen/_11sdp"
 
-                app:passwordToggleEnabled="true"
                 app:hintTextAppearance="@style/TextStyle"
-                app:hintTextColor="@color/black">
+                app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/password_id"
@@ -93,8 +92,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_15sdp"
                     android:fontFamily="@font/montserrat_semibold"
-                    android:text="Forgot your pasword ??"
-                    android:textSize="@dimen/_12sdp"
+                    android:text="Forgot password"
+                    android:textSize="@dimen/_10sdp"
                     tools:ignore="TextSizeCheck" />
 
             </LinearLayout>
@@ -104,34 +103,19 @@
                 android:id="@+id/login_btn"
                 android:layout_width="@dimen/_270sdp"
                 android:layout_height="@dimen/_42sdp"
-                android:text="LOGIN Employee"
-                app:cornerRadius="@dimen/_14sdp"
-                android:layout_marginTop="@dimen/_20sdp"/>
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/login_org_btn"
-                android:layout_width="@dimen/_270sdp"
-                android:layout_height="@dimen/_42sdp"
-                android:text="LOGIN organizer"
-                app:cornerRadius="@dimen/_14sdp"
-                android:layout_marginTop="@dimen/_10sdp"/>
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="LOGIN"
+                app:cornerRadius="@dimen/_14sdp" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Create New Account"
-                android:textSize="@dimen/_12sdp"
-                tools:ignore="TextSizeCheck" />
+
 
             <pl.droidsonroids.gif.GifImageView
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/login_board_t"/>
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:src="@drawable/login_board_t" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -243,8 +227,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-
-
 
 </RelativeLayout>
